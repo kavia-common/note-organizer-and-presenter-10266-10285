@@ -3,6 +3,7 @@ import { ref } from "vue";
 
 const props = defineProps({
   count: {
+    type: Number,
     default: 0,
   },
 });

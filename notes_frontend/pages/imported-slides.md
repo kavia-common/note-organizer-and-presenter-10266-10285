@@ -1,27 +1,7 @@
 # Imported Slides
 
-You can split your slides.md into multiple files and organize them as you want using the `src` attribute.
+- The next page embeds the full Notes App UI inside this deck.
+- Use the Top Bar to create notes, search, and present.
+- Use the Sidebar to filter by tags and select notes.
 
-#### `slides.md`
-
-```markdown
-# Page 1
-
-Page 2 from main entry.
-
----
-
-## src: ./subpage.md
-```
-
-<br>
-
-#### `subpage.md`
-
-```markdown
-# Page 2
-
-Page 2 from another file.
-```
-
-[Learn more](https://sli.dev/guide/syntax.html#importing-slides)
+[Open Notes App slide](#/notes)

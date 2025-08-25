@@ -42,8 +42,8 @@ function addTag() {
       </div>
       <div class="tag-add">
         <input
-          class="tag-input"
           v-model="tagInput"
+          class="tag-input"
           placeholder="Add tag..."
           @keyup.enter="addTag"
         />
@@ -64,8 +64,8 @@ function addTag() {
           <div class="title">{{ n.title || 'Untitled' }}</div>
           <div class="meta">
             <span class="date">{{ new Date(n.updatedAt).toLocaleString() }}</span>
-            <span class="tags" v-if="n.tags?.length"> •
-              <span class="tag-chip" v-for="tg in n.tags" :key="tg">#{{ tg }}</span>
+            <span v-if="n.tags?.length" class="tags"> •
+              <span v-for="tg in n.tags" :key="tg" class="tag-chip">#{{ tg }}</span>
             </span>
           </div>
         </div>

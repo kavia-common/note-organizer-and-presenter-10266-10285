@@ -58,10 +58,10 @@ function signOut() {
     </div>
     <div class="right">
       <input
+        v-model="searchQuery"
         class="search"
         type="search"
         placeholder="Search notes..."
-        v-model="searchQuery"
         @input="handleSearch"
       />
       <div class="user">

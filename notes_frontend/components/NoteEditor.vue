@@ -33,11 +33,11 @@ function save() {
 </script>
 
 <template>
-  <div class="editor" v-if="!isEmpty">
+  <div v-if="!isEmpty" class="editor">
     <div class="row">
       <input
-        class="title"
         v-model="localTitle"
+        class="title"
         type="text"
         placeholder="Note title"
         @blur="save"
@@ -45,8 +45,8 @@ function save() {
     </div>
     <div class="row">
       <textarea
-        class="content"
         v-model="localContent"
+        class="content"
         placeholder="Write your note in Markdown..."
         @input="save"
       ></textarea>

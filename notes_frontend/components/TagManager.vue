@@ -42,8 +42,8 @@ function remove(tag: string) {
     </div>
     <div class="adder">
       <input
-        class="tag-input"
         v-model="input"
+        class="tag-input"
         placeholder="Add a tag..."
         @keyup.enter="add"
       />
